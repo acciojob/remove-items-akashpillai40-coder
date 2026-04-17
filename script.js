@@ -5,7 +5,6 @@ let button = document.querySelector("input");
 
 
 button.addEventListener("click", () => {
-  let index = select.index;
-  select.remove(index);
+  let selectedOption = select.options[select.selectedIndex];
+  selectedOption.remove();
 });
-
